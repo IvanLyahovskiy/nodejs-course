@@ -1,0 +1,66 @@
+.addTodo_form {
+    display: flex;
+    gap: 12px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto 32px;
+}
+
+.addTodo_input {
+    flex: 1;
+    padding: 16px 20px;
+    font-size: 16px;
+    border: 2px solid #e5e7eb;
+    border-radius: 14px;
+    background: white;
+    color: #1f2937;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.addTodo_input:focus {
+    box-shadow:
+        0 0 0 3px rgba(0, 0, 0, 0.05),
+        0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.addTodo_input::placeholder {
+    color: #9ca3af;
+}
+
+.addTodo_input:hover {
+    border-color: #d1d5db;
+}
+
+.addTodo_btn {
+    padding: 16px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: wheat;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 100px;
+    box-shadow: 0 4px 6px rgba(99, 102, 241, 0.25);
+    letter-spacing: 0.3px;
+}
+
+.addTodo_btn:hover:not(:disabled) {
+    opacity: 0.9;
+    box-shadow: 0 6px 12px rgba(99, 102, 241, 0.3);
+}
+
+.addTodo_btn:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+.addTodo_btn:disabled {
+    background: #d1d5db;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+    opacity: 0.7;
+}
